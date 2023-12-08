@@ -52,6 +52,23 @@ html {
   scroll-behavior: smooth;
   }
 
+  .button-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #8B6E5D; /* Button color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* Hover effect */
+  .button-link:hover {
+    background-color: #6D4C3E; /* Change color on hover */
+  }
+
 /**************************/
 
 /*{font-family: "fancy_bold";}*/
@@ -379,6 +396,21 @@ html {
 }
 
 /**************************/
+.button-link-it {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #8B6E5D; /* Button color */
+  color: #fff; /* Text color */
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+/* Hover effect */
+.button-link-it:hover {
+  background-color: #6D4C3E; /* Change color on hover */
+}
 
 .in-touch{
   position: relative;
@@ -393,7 +425,7 @@ html {
   position: absolute;
   border-radius: 20px;
   text-align: center;
-  padding: 7px;
+  padding: 10px;
   display: block;
   left: 50%;
   bottom: 50%;
