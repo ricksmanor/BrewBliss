@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-style Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(36,69,169);
+            background-image: url('/images/socials/facebook.jpg');
+            background-size: cover;
+        }
+
+        .profile-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile-container {
+            text-align: center;
+            
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #1877f2;
+        }
+
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #080402;
+        }
+
+        .profile-username {
+            font-size: 16px;
+            color: #363636;
+            margin-bottom: 12px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #080402;
+        }
+
+        .profile-button {
+            padding: 12px 24px;
+            background-color: #1877f2;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .profile-button:hover {
+            background-color: #115293;
+        }
+
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #3E4095;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            background-color: #2A2B7C;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-row">
+        <div class="profile-container">
+            <img src="/images/socials/profile/phil&leia.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-name">Phil & Leia</div>
+            <div class="profile-username">@phil&leia</div>
+            <div class="profile-bio">Caffeine Collaborators | Co-Owners of Brew Bliss, Brewing Joyful Moments ☕👫</div>
+            <button class="profile-button">Add Friend</button>
+        </div>
+
+        <div class="profile-container">
+            <img src="/images/socials/profile/rich.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-name">Rich</div>
+            <div class="profile-username">@coffeerich</div>
+            <div class="profile-bio">Caffeine Connoisseur | Exploring the World of Coffee Delights ☕</div>
+            <button class="profile-button">Add Friend</button>
+        </div>
+
+        <div class="profile-container">
+            <img src="/images/socials/profile/jon.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-name">Jon</div>
+            <div class="profile-username">@marketerjon</div>
+            <div class="profile-bio">Coffee Ambassador | Merging Marketing Brilliance with a Love for Unique Brews ✈️☕</div>
+            <button class="profile-button">Add Friend</button>
+        </div>
+        
+        <div class="profile-container">
+            <img src="/images/socials/profile/haley.jpg" alt="Profile Image" class="profile-image">
+            <div class="profile-name">Haley</div>
+            <div class="profile-username">@haleyscomet</div>
+            <div class="profile-bio">Brewtographer | Crafting Visual Tales of Coffee and Nature ☕📷🌿</div>
+            <button class="profile-button">Add Friend</button>
+        </div>
+    </div>
+    <a href="/BrewBliss/index.html" class="back-to-home">Back to Home</a>
+</body>
+</html>

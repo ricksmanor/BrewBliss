@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a53b86;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .loader-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .loader-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid transparent;
+            border-top-color: white;
+            animation: rotate 1s linear infinite;
+        }
+
+        .loader-tick {
+            display: none;
+            margin-top: 20px;
+            font-size: 74px;
+            color: darkgreen;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loader Container -->
+    <div class="loader-container">
+        <!-- Loader Circle -->
+        <div class="loader-circle" id="loaderCircle"></div>
+        <!-- Loader Tick -->
+        <div class="loader-tick" id="loaderTick">&#10004;</div>
+    </div>
+
+    <script>
+        // Simulate loading delay
+        setTimeout(function () {
+            // Hide the rotating circle
+            document.getElementById("loaderCircle").style.display = "none";
+            
+            // Show the tick
+            document.getElementById("loaderTick").style.display = "block";
+
+            // Redirect after 1 second (adjust as needed)
+            setTimeout(function () {
+                window.location.href = '/BrewBliss/index.html'; // Replace with your desired URL
+            }, 1000);
+
+        }, 3000); // Adjust the time according to your loading requirements
+    </script>
+
+</body>
+</html>
