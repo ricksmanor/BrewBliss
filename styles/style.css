@@ -716,6 +716,13 @@ backdrop-filter: blur(10px);
     box-sizing: border-box;
 }
 
+.footer h2{
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  box-sizing: border-box;
+}
+
 .container {
 	max-width: 1170px;
 	margin: auto;
