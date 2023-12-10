@@ -100,7 +100,7 @@ html {
   text-decoration: none;
   border-radius: 20px;
   transition: background-color 0.4s ease-in-out, border-radius 0.6s ease-in-out,color 0.8s ease-in-out ;
-  font-size: 2vh;
+  font-size: 24px;
   font-family: "fancy_bold";
 }
 
@@ -140,7 +140,7 @@ html {
 
 .logo-name{
     font-weight: bolder;
-    font-size: 6vh;
+    font-size: 70px;
     color: #f2f2f2;
     font-family: "fancy_bold";
 }
@@ -264,7 +264,7 @@ html {
   font-weight: bold;
   text-align: center;
   font-family: "fancy_bold";
-  font-size: 6vh;
+  font-size: 70px;
 }
 
 .about-us h4{
@@ -495,7 +495,7 @@ html {
 }
 .cfx-left h2, .cfx-right h2{
   font-family: "fancy_bold";
-  font-size: 6vh;
+  font-size: 58px;
 }
 
 .cfx-right {
@@ -540,7 +540,7 @@ form {
   color: #333;
   font-weight: bold;
   font-family: "fancy_bold";
-  font-size: 3vh;
+  font-size: 35px;
   color: #967259;
 }
 
@@ -554,7 +554,7 @@ textarea {
   border: 2px solid #ccc;
   border-radius: 15px;
   font-family: "fancy_bold";
-  font-size: 2vh;
+  font-size: 24px;
   text-align: center;
 }
 
