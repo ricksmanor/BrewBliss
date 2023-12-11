@@ -20,7 +20,8 @@
 
         .profile-row {
             display: flex;
-            padding: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .profile-container {
@@ -98,9 +99,13 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-
-
-
+        /* Add a media query for screens with a maximum width of 767px (typical mobile devices) */
+@media (max-width: 767px) {
+    .profile-container {
+        width: 100%;  /* Set the width to 100% for smaller screens */
+        box-sizing: border-box;  /* Include padding and border in the total width */
+    }
+}
 
 
         
